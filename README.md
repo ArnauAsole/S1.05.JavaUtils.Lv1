@@ -58,11 +58,10 @@ Git Bash or any compatible terminal to run commands.
 2. Clone the Repository (Optional)
 If you'd like to use version control and clone the repository, you can do so with Git:
 
-bash
-Copiar
-Editar
 git clone https://github.com/ArnauAsole/S1.05.JavaUtils.Lv1.Ex1.git
-cd directory-lister-java
+
+cd ArnauAsole/S1.05.JavaUtils.Lv1.Ex1/
+
 3. Open the Project
 Open the project folder in IntelliJ IDEA or Eclipse:
 
@@ -83,15 +82,9 @@ This will generate the DirectoryLister.class file (the bytecode version of the p
 2. Run the Program
 To run the program, use the following command in the terminal, replacing <directory-path> with the path of the directory you want to list:
 
-bash
-Copiar
-Editar
 java DirectoryLister <directory-path>
 For example:
 
-bash
-Copiar
-Editar
 java DirectoryLister C:\Users\YourUsername\Documents
 The program will display the contents of the specified directory, sorted alphabetically.
 
