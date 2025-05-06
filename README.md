@@ -1,95 +1,101 @@
-# ➡🅰🅱©... Exercise Description
+📁 S1.05.JavaUtils.Lv1
+📂📄 File Utilities System – Directory and File Operations
 
-The goal of this exercise is to create a Java program that lists the contents of a directory in alphabetical order. The directory path is provided as a parameter. The program should be run from the command line, and you should compile Java source files (.java) into bytecode files (.class) and then execute them from the command line.
+🧾 Exercise Description
+The goal of this set of exercises is to build a basic Java file utility system that performs common directory and file operations. You will progressively implement functionality including directory listing, recursive traversal, saving data to text files, reading file contents, and object serialization.
 
-### ✅ What You Must Implement
+✅ Requirements
+Level 1 Exercises
+Exercise 1
+Create a class that receives a directory path as a parameter and lists its contents alphabetically.
 
-#### 🔹 DirectoryLister Class
-- Create a class `DirectoryLister` that:
-  - Accepts a directory path as a command-line argument.
-  - Lists all the files and subdirectories in the given directory.
-  - Sorts the contents alphabetically by name.
-  - Prints the sorted list to the console.
+Exercise 2
+Extend the previous class to recursively list a full directory tree. For each file or folder, print:
 
-#### 🔹 Command Line Execution
-- The program should be executed from the command line (not just from an IDE).
-- The class should accept the directory path as an argument and list the contents of the directory.
-  
-### 📝 Example Usage
+Whether it is a Directory (D) or a File (F)
 
-1. To compile and run the program, use the following commands in the command line:
+The last modification date
 
-```bash
-# Compile the Java source file into bytecode
-javac DirectoryLister.java
+List everything in alphabetical order per level
 
-# Run the program with a directory path as an argument
-java DirectoryLister <directory-path>
-The output will be a list of files and subdirectories within the specified directory, sorted alphabetically.
+Exercise 3
+Modify the recursive directory tree from Exercise 2 so the results are written to a .txt file instead of the console.
 
+Exercise 4
+Add functionality to read any .txt file and print its contents to the console.
+
+Exercise 5
+Implement object serialization:
+
+Serialize a Java object into a .ser file
+
+Then deserialize it from that file and display its contents
+
+🔨 Methods Implemented
+java
+
+// DirectoryLister.java
+listDirectoryAlphabetically(String path)
+
+// DirectoryTreeLister.java
+listTree(String path, String indent)
+
+// DirectoryTreeToFile.java
+writeTreeToFile(File dir, String indent, BufferedWriter writer)
+
+// TxtFileReader.java
+readFile(String path)
+
+// ObjectSerializationExample.java
+serializeObject(Object obj, String filename)
+deserializeObject(String filename)
 💻 Technologies Used
 Java 17
 
-IntelliJ IDEA or Eclipse
+IntelliJ IDEA (Community Edition)
 
-Maven or Gradle (optional, if you use them)
+No third-party libraries required
 
-Git & GitHub
+JUnit 5 (optional for test coverage)
 
 📋 Prerequisites
-To run this project, you will need:
+Java JDK 17 installed
+
+IntelliJ IDEA Community Edition
+
+Git (optional, for version control)
+
+🛠️ Installation and Setup
+Install Required Tools
 
 Java JDK 17
 
-IntelliJ IDEA or Eclipse
+IntelliJ IDEA Community Edition
 
-Git Bash or compatible terminal
-
-GitHub account (optional for version control)
-
-🛠️ Installation and Setup
-1. Install Required Tools
-Java JDK 17: Download and Install Java JDK
-
-IntelliJ IDEA or Eclipse: Choose your preferred IDE for development.
-
-Git Bash or any compatible terminal to run commands.
-
-2. Clone the Repository (Optional)
-If you'd like to use version control and clone the repository, you can do so with Git:
-
-git clone https://github.com/ArnauAsole/S1.05.JavaUtils.Lv1.Ex1.git
-
-cd ArnauAsole/S1.05.JavaUtils.Lv1.Ex1/
-
-3. Open the Project
-Open the project folder in IntelliJ IDEA or Eclipse:
-
-IntelliJ IDEA: Go to File → Open and select the project directory.
-
-Eclipse: Go to File → Import → Existing Projects into Workspace, and select the project directory.
-
-📜 Commands to Compile and Run
-1. Compile the Java Program
-In the command line, navigate to the directory where the DirectoryLister.java file is located and run:
+Clone the Repository (Optional)
 
 bash
-Copiar
-Editar
-javac DirectoryLister.java
-This will generate the DirectoryLister.class file (the bytecode version of the program).
+```
+git clone https://github.com/ArnauAsole/S1.05.JavaUtils.Lv1.git
+cd S1.05.JavaUtils.Lv1/
+```
 
-2. Run the Program
-To run the program, use the following command in the terminal, replacing <directory-path> with the path of the directory you want to list:
+Open the Project in IntelliJ
 
-java DirectoryLister <directory-path>
-For example:
+Go to File → Open and select the root folder of the project.
 
-java DirectoryLister C:\Users\YourUsername\Documents
-The program will display the contents of the specified directory, sorted alphabetically.
+▶️ Running the Project
+To run a specific exercise:
+
+Open the corresponding .java file (e.g., DirectoryTreeToFile.java)
+
+Right-click the file and select Run
+
+You will see the program output in the console or as a generated file
 
 🌐 Deployment
-This is a command-line-based Java application that runs locally in your terminal or IDE. There is no need for deployment to a server or external environment.
+This is a console-based Java utility project meant for local execution in your IDE. No deployment is required.
 
 🤝 Acknowledgements
-Special thanks to Adria,Ignasi,Ana,Alejandro,Marina for developing this exercise and contributing to the implementation.
+Special thanks to the contributors:
+Arnau, Adrià, Ignasi, Ana, Alejandro
