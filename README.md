@@ -1,5 +1,6 @@
-📁 S1.05.JavaUtils.Lv1
-📂📄 File Utilities System – Directory and File Operations
+# 📁 S1.05.JavaUtils.Lv1
+
+## 📂📄 File Utilities System – Directory and File Operations
 
 🧾 Exercise Description
 The goal of this set of exercises is to build a basic Java file utility system that performs common directory and file operations. You will progressively implement functionality including directory listing, recursive traversal, saving data to text files, reading file contents, and object serialization.
@@ -31,7 +32,7 @@ Serialize a Java object into a .ser file
 
 Then deserialize it from that file and display its contents
 
-🔨 Methods Implemented
+## 🔨 Methods Implemented
 java
 
 // DirectoryLister.java
@@ -74,7 +75,6 @@ IntelliJ IDEA Community Edition
 
 Clone the Repository (Optional)
 
-bash
 ```
 git clone https://github.com/ArnauAsole/S1.05.JavaUtils.Lv1.git
 cd S1.05.JavaUtils.Lv1/
