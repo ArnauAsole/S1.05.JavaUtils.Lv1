@@ -89,6 +89,9 @@ To run a specific exercise:
 
 Open the corresponding .java file (e.g., DirectoryTreeToFile.java)
 
+For compiling use: javac src/main/java/"file name".java
+For executing this exercice: java -cp src/main/java "file name"
+
 Right-click the file and select Run
 
 You will see the program output in the console or as a generated file
