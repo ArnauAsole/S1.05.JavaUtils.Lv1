@@ -101,4 +101,4 @@ This is a console-based Java utility project meant for local execution in your I
 
 🤝 Acknowledgements
 Special thanks to the contributors:
-Arnau, Adrià, Ignasi, Ana, Alejandro
+Arnau, Adrià, Ignasi, Ana, Alejandro and Marc.
